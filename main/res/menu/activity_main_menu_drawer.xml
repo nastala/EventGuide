@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/event"
+            android:title="Events" />
+        <item
+            android:id="@+id/nav_myevents"
+            android:icon="@drawable/myevent"
+            android:title="My Events" />
+        <item
+            android:id="@+id/nav_pastevents"
+            android:icon="@drawable/pastevent"
+            android:title="Past Events" />
+    </group>
+
+    <item android:title="Customize">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/profiles"
+                android:title="Profile" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,22 @@
+<android.support.v4.widget.SwipeRefreshLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefreshLayout">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.nastala.eventguide.FilteredEventFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <ListView
+            android:id="@+id/lvEvent"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="10dp" />
+    </FrameLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

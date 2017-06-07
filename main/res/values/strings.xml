@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EventGuide</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_new_event2">ADD NEW EVENT</string>
+    <string name="event_title">Title</string>
+    <string name="event_detail">Detail</string>
+    <string name="event_city">City</string>
+    <string name="event_type">Type</string>
+    <string name="event_date">Date(yyyy-mm-dd)</string>
+</resources>

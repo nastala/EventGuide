@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin_add_new_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nastala.eventguide.AdminAddNewEvent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civEventImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:drawable/ic_menu_add"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/civEventImage"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/event_title"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTitle"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/event_detail"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/event_type"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/spnCity"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnAddNewEvent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_event2"
+        android:layout_below="@+id/etType"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spnCity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etDetail"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etDetail"
+        android:ems="10"
+        android:hint="@string/event_date"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

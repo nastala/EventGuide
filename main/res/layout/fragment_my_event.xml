@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nastala.eventguide.MyEventFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v4.view.ViewPager
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/viewPager"
+        android:layout_alignParentTop="true">
+
+        <android.support.v4.view.PagerTitleStrip
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewPagerTitle"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            ></android.support.v4.view.PagerTitleStrip>
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

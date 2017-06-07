@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Your Comment"
+        android:inputType="textMultiLine" />
+
+    <RadioGroup
+        android:id="@+id/rgYesNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/rbtnYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:checked="true"
+            android:text="Yes" />
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:id="@+id/rbtnNo"
+        android:layout_gravity="left"
+        android:checked="false" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you recommend it?"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etComment"
+        android:layout_alignStart="@+id/etComment" />
+
+    <Button
+        android:id="@+id/btnRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="Rate"
+        android:layout_alignTop="@+id/rgYesNo"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

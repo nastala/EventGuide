@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civProfileImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/tvUsername"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvComment"
+        android:layout_alignTop="@+id/civProfileImage"
+        android:text="Username"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Comment"
+        android:layout_alignBottom="@+id/civProfileImage"
+        android:layout_centerHorizontal="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civRate"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/civProfileImage"
+        android:layout_marginStart="9dp"
+        android:layout_toEndOf="@+id/tvComment" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:text="Date"
+        android:layout_alignBottom="@+id/tvComment"
+        android:layout_toStartOf="@+id/civRate" />
+
+</RelativeLayout>
